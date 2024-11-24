@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar compras</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <div class="container">
+        <div class="nombre-app">
+            <div class="logo2">WMIN MOBILE V.1.0</div>
+        </div>
+        <div class="usuario-login">
+            <img src="assets/icons/profile.svg" class="icono-usuario" alt="Perfil de Usuario">
+            <div class="usuario-rol-container">
+                <div class="usuario">Usuario 123</div>
+                <div class="rol">Perfil Estándar</div>
+            </div>
+        </div>
+
+        <main>
+            <h2>Compras</h2>
+            <form>
+                <div class="form-group">
+                    <label>Fecha compra</label>
+                    <input type="text" id="fecha-compra" readonly>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox"> Cliente registrado
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Medio de pago</label>
+                    <select>
+                        <option>Efectivo</option>
+                        <option>Tarjeta</option>
+                        <option>Transferencia</option>
+                    </select>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>PLU/EAN</th>
+                            <th>Descripción</th>
+                            <th>Cantidad</th>
+                            <th>Valor Unidad</th>
+                            <th>Valor Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <!-- Añadir más filas según sea necesario -->
+                    </tbody>
+                </table>
+                <div class="summary">
+                    <div>
+                        <label for="cantidad">Cantidad Artículos</label>
+                        <input type="text" id="cantidad" readonly>
+                    </div>
+                    <div>
+                        <label for="valor">Valor a Pagar</label>
+                        <input type="text" id="valor" readonly>
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <button type="submit" class="save">Guardar</button>
+                    <button type="reset" class="clear">Limpiar</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
