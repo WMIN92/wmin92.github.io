@@ -213,6 +213,11 @@ body {
   color: #ffffff;
 }
 
+.menu-link {
+  text-decoration: none;
+  color: inherit; /* Usa el color del contexto */
+}
+
 /* Contenedor de los iconos */
 .menu-icons {
   display: flex;
